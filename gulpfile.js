@@ -1,5 +1,5 @@
 var gulp = require('gulp'),
-    task = require('hi-gulp4-cfg'),
+    task = require('./gulp.task.js'),
     dev = task.dev(),
     prod = task.prod()
 ;

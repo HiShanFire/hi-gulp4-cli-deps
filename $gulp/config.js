@@ -6,13 +6,13 @@ var $config = {
         prod : 'dist',
     }
 }
-var path = process.cwd()+'/$config';
-
-try{
-   $config = require(path)
-}
-catch(e){
-    console.log(e);
-}
+// var path = process.cwd()+'/$config';
+//
+// try{
+//    $config = require(path)
+// }
+// catch(e){
+//     console.log(e);
+// }
 
 module.exports = $config;

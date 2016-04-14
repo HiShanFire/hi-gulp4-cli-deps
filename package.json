@@ -1,6 +1,6 @@
 {
-  "name": "hi-gulp4-modules",
-  "version": "1.0.9",
+  "name": "hi-gulp4-cli-deps",
+  "version": "1.1.2",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -20,8 +20,7 @@
     "gulp-sass": "^2.2.0",
     "gulp-sourcemaps": "^1.6.0",
     "gulp-uglify": "^1.5.1",
-    "imagemin-pngquant": "^4.2.0",
-    "hi-gulp4-cfg": "^1.0.3"
+    "imagemin-pngquant": "^4.2.0"
   },
   "devDependencies": {},
   "author": "",
