@@ -1,0 +1,28 @@
+var $path = require('./config').path,
+    gulp = require('gulp'),
+    newer = require('gulp-newer'),
+    sourcemaps = require('gulp-sourcemaps'),
+    cached = require('gulp-cached'),
+    fileinclude = require('gulp-file-include')
+;
+
+module.exports = {
+    dev: ()=>{
+        return gulp.src($path.dev +'/**/!(_)*.html')
+            //.pipe(newer($path.dev_server, {extension: '.html'}))
+            .pipe(fileinclude({
+                prefix: '@@',
+                basepath: '@file'
+            }))
+            .pipe(gulp.dest($path.dev_server))
+    },
+
+    prod: ()=>{
+        return gulp.src($path.pre +'/**/!(_)*.html')
+            .pipe(fileinclude({
+                prefix: '@@',
+                basepath: '@file'
+            }))
+            .pipe(gulp.dest($path.prod));
+    }
+};
